@@ -1,6 +1,6 @@
 workdir=""
 for (num=1; num<114; num+=1){
-	open("/seed number/NO_"+num+".JPG");
+	open("/../seed number/NO_"+num+".JPG");
 	selectWindow("NO_"+num+".JPG");
 	run("Enhance Contrast...", "saturated=0.35");
 	run("Sharpen");
@@ -51,6 +51,6 @@ for (num=1; num<114; num+=1){
 	run("Watershed");
 	run("Analyze Particles...", "size=200-5000 show=Outlines clear include summarize");
 	selectWindow("Drawing of NO_"+num+".JPG");
-	saveAs("Jpeg", "../seed number/Result/Drawing of NO_"+num+".jpg");
+	saveAs("Jpeg", "/../seed number/Result/Drawing of NO_"+num+".jpg");
 	run("Close All");
 }
