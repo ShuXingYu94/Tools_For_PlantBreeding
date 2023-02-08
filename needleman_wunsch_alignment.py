@@ -1,5 +1,3 @@
-# Please note this programme is written with help of chatGPT!
-
 def needleman_wunsch(seq1, seq2, match_score=1, mismatch_score=-1, gap_penalty=-1):
 	m, n = len(seq1), len(seq2)
 	score = [[0 for j in range(n + 1)] for i in range(m + 1)]
